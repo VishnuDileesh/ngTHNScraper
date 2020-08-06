@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "thnscraper"
+    }
+  },
+  "defaultProject": "thnscraper",
+  "cli": {
+    "analytics": false
+  }
 }
