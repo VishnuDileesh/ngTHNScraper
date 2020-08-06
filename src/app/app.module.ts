@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+
+import { CategoriesService } from 'src/app/categories.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,13 +15,10 @@ import { CatcardComponent } from './catcard/catcard.component';
     AppComponent,
     HeaderComponent,
     NavheaderComponent,
-    CatcardComponent
+    CatcardComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  providers: [CategoriesService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

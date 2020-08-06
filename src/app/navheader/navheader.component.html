@@ -1,8 +1,6 @@
 <nav>
-  <app-catcard></app-catcard>
-  <app-catcard></app-catcard>
-  <app-catcard></app-catcard>
-  <app-catcard></app-catcard>
-  <app-catcard></app-catcard>
-  <app-catcard></app-catcard>
+  <app-catcard
+    [categoryTitle]="category"
+    *ngFor="let category of categories"
+  ></app-catcard>
 </nav>
