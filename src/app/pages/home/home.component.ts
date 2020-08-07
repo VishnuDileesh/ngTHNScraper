@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CategoriesService } from '../../categories.service';
-import { AllnewsService } from '../../allnews.service';
+import { CategoriesService } from '../../services/categories.service';
+import { AllnewsService } from '../../services/allnews.service';
 
 @Component({
   selector: 'app-home',
