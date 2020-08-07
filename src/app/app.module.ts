@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { CategoriesService } from './services/categories.service';
 import { AllnewsService } from './services/allnews.service';
+import { CategoryallnewsService } from './services/categoryallnews.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { CatcardComponent } from './components/catcard/catcard.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CategoriesCardComponent } from './components/categories-card/categories-card.component';
 import { NewsCardMetaComponent } from './components/news-card-meta/news-card-meta.component';
+import { CategorynewsComponent } from './pages/categorynews/categorynews.component';
 
 @NgModule({
   declarations: [
@@ -23,9 +25,10 @@ import { NewsCardMetaComponent } from './components/news-card-meta/news-card-met
     HomeComponent,
     CategoriesCardComponent,
     NewsCardMetaComponent,
+    CategorynewsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
-  providers: [CategoriesService, AllnewsService],
+  providers: [CategoriesService, AllnewsService, CategoryallnewsService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
