@@ -11,6 +11,8 @@ import { HeaderComponent } from './layout/header/header.component';
 import { NavheaderComponent } from './navheader/navheader.component';
 import { CatcardComponent } from './catcard/catcard.component';
 import { HomeComponent } from './pages/home/home.component';
+import { CategoriesCardComponent } from './components/categories-card/categories-card.component';
+import { NewsCardMetaComponent } from './components/news-card-meta/news-card-meta.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { HomeComponent } from './pages/home/home.component';
     NavheaderComponent,
     CatcardComponent,
     HomeComponent,
+    CategoriesCardComponent,
+    NewsCardMetaComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [CategoriesService, AllnewsService],

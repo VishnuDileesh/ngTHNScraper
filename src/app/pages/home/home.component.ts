@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CategoriesService } from '../../categories.service';
 import { AllnewsService } from '../../allnews.service';
 
 @Component({
@@ -7,9 +8,18 @@ import { AllnewsService } from '../../allnews.service';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  constructor(private allnews: AllnewsService) {}
+  categoryList: string[];
+  allNews: any;
+
+  constructor(
+    private categories: CategoriesService,
+    private allnews: AllnewsService
+  ) {}
 
   ngOnInit(): void {
-    this.allnews.fetchAllNews().subscribe((data) => console.log(data));
+    this.categories
+      .fetchCategories()
+      .subscribe((data) => (this.categoryList = data));
+    this.allnews.fetchAllNews().subscribe((data) => (this.allNews = data));
   }
 }

@@ -1,0 +1,8 @@
+<h2 class="categoryHeader">
+  {{ category }}
+</h2>
+<app-news-card-meta
+  [news]="news"
+  [category]="category"
+  *ngFor="let news of allNews"
+></app-news-card-meta>

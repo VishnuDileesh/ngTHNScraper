@@ -11,3 +11,19 @@ body {
   font-family: "Roboto", sans-serif;
   color: #11091a;
 }
+
+a {
+  text-decoration: none;
+  color: #11091a;
+}
+
+.card {
+  background-color: #eafde6;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+}
+
+.categoryHeader {
+  background-color: #f0f2eb;
+  padding: 0.8rem 1.5rem;
+}
