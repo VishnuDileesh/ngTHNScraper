@@ -16,6 +16,7 @@ import { CategoriesCardComponent } from './components/categories-card/categories
 import { NewsCardMetaComponent } from './components/news-card-meta/news-card-meta.component';
 import { CategorynewsComponent } from './pages/categorynews/categorynews.component';
 import { CatheaderComponent } from './components/catheader/catheader.component';
+import { NewsComponent } from './pages/news/news.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { CatheaderComponent } from './components/catheader/catheader.component';
     NewsCardMetaComponent,
     CategorynewsComponent,
     CatheaderComponent,
+    NewsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [CategoriesService, AllnewsService, CategoryallnewsService],

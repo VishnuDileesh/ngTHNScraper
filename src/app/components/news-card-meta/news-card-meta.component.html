@@ -1,4 +1,7 @@
-<a href="" *ngIf="category.slug == news.categoryslug">
+<a
+  [routerLink]="['/news', news.newsid]"
+  *ngIf="category.slug == news.categoryslug"
+>
   <div class="card">
     <h4>{{ news.title }}</h4>
   </div>

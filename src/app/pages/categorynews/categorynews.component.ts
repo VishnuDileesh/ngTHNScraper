@@ -23,8 +23,6 @@ export class CategorynewsComponent implements OnInit {
     this.route.paramMap.subscribe((params) => {
       this.routeCategory = params.get('categoryslug');
 
-      // this.category.slug = this.routeCategory;
-
       this.categories.fetchCategories().subscribe((data) => {
         this.category = data.filter((cat) => {
           return cat.slug === this.routeCategory;

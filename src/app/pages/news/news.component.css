@@ -1,0 +1,23 @@
+main {
+  margin: 0 1rem;
+}
+
+.news-container {
+  padding: 0 0.5rem;
+}
+
+.news-title {
+  margin: 1rem 0 2rem 0;
+}
+
+.news-readlink {
+  padding: 1rem 1rem;
+  margin: 2rem 0;
+  background-color: red;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.news-summary {
+  margin: 3rem 0 1rem 0;
+}
