@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CategoriesService } from 'src/app/categories.service';
+import { CategoriesService } from '../categories.service';
 
 @Component({
   selector: 'app-navheader',
