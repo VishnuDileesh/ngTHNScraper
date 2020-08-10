@@ -13,11 +13,14 @@ main {
 .news-readlink {
   padding: 1rem 1rem;
   margin: 2rem 0;
-  background-color: red;
+  background-color: #395697;
   font-weight: bold;
   color: whitesmoke;
+  border-radius: 2rem;
 }
 
 .news-summary {
   margin: 3rem 0 1rem 0;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
